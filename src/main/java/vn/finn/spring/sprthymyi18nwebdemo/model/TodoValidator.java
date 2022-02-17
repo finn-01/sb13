@@ -13,7 +13,7 @@ public class TodoValidator {
      * @param todo
      * @return
      */
-    public boolean isInvalid(Todo todo){
+    public boolean isValid(Todo todo){
         return Optional.ofNullable(todo)
                 .filter(todo1 -> !StringUtils.isEmpty(todo1.getTitle()))
                 .filter(todo1 -> !StringUtils.isEmpty(todo1.getDetail()))
